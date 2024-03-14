@@ -13,32 +13,32 @@ const Values = () => {
         title="Balancing reliability and innovation"
       >
         <p>
-        Something Something Something
+        Placeholder
         </p>
       </SectionIntro>
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-          Something Something Something
+          Placeholder
           </GridListItem>
           <GridListItem title="Efficient">
-          Something Something Something
+          Placeholder
 
           </GridListItem>
           <GridListItem title="Adaptable">
-          Something Something Something
+          Placeholder
 
           </GridListItem>
           <GridListItem title="Honest">
-          Something Something Something
+          Placeholder
 
           </GridListItem>
           <GridListItem title="Loyal">
-          Something Something Something
+          Placeholder
 
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. Something Something Something
+            T Placeholder
 
           </GridListItem>
         </GridList>

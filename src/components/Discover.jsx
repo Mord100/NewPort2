@@ -14,9 +14,9 @@ const Discover = () => {
           what makes their business tick.
         </p>
         <p>
-          Something Something Smething{" "}
+        Placeholder{" "}
           <strong className="font-semibold text-neutral-950">business</strong>
-          Something Something Smething
+          Placeholder
         </p>
         <p>
           Once the full audit is complete, we report back with a comprehensive

@@ -8,13 +8,13 @@ const Deliver = () => {
     <Section title="Deliver" image={{ src: imageMeeting, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-        Something Something Smething
+        Placeholder
         </p>
         <p>
-        Something Something Smething
+        Placeholder
         </p>
         <p>
-          WSomething Something Smething
+        Placeholder
           <strong className="font-semibold text-neutral-950">
             maintenance
           </strong>{" "}
@@ -26,13 +26,13 @@ const Deliver = () => {
       </h3>
       <List>
         <ListItem title="Testing">
-          Our projects always have 100% test coverage, Something Something Smething
+          Our projects always have 100% test coverage,  Placeholder
         </ListItem>
         <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Something Something Smething
+        Placeholder
         </ListItem>
         <ListItem title="Support">
-        Something Something Smething
+        Placeholder
         </ListItem>
       </List>
     </Section>

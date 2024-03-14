@@ -5,11 +5,11 @@ const WorkPage = () => {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
+        eyebrow="Work"
         title="Proven solutions for real-world problems."
       >
         <p>
-        We prioritize efficiency and optimal resource utilization to deliver unparalleled value to our clients. Explore some of our latest projects showcasing our dedication to excellence.
+        {/* We prioritize efficiency and optimal resource utilization to deliver unparalleled value to our clients. Explore some of our latest projects showcasing our dedication to excellence. */}
         </p>
       </PageIntro>
     </>

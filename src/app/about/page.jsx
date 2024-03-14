@@ -8,10 +8,10 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About" title="">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          {/* We believe that our strength lies in our collaborative approach, which
+          puts our clients at the center of everything we do. */}
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <h1>EDUCATION</h1>

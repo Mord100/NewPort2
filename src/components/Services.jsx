@@ -34,19 +34,19 @@ const Services = () => {
           {/* List item */}
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-            Our specialty lies in the meticulous creation of stunning, high-quality marketing pages. With an unwavering focus on design excellence and user engagement, we ensure your online presence captivates and resonates with your audience. From sleek interfaces to compelling content, 
-            our web development expertise is dedicated to elevating your brand's digital experience.
+            {/* Our specialty lies in the meticulous creation of stunning, high-quality marketing pages. With an unwavering focus on design excellence and user engagement, we ensure your online presence captivates and resonates with your audience. From sleek interfaces to compelling content, 
+            our web development expertise is dedicated to elevating your brand's digital experience. */}
             </ListItem>
             <ListItem title="Application development">
-            We are at the forefront of innovative application development, leveraging cutting-edge technologies to bring your ideas to life. Our seasoned team of developers is committed to delivering robust and user-friendly applications tailored to meet your specific needs. From concept to deployment, we ensure a seamless and efficient development process, 
-            providing solutions that align with the ever-evolving demands of the digital landscape
+            {/* We are at the forefront of innovative application development, leveraging cutting-edge technologies to bring your ideas to life. Our seasoned team of developers is committed to delivering robust and user-friendly applications tailored to meet your specific needs. From concept to deployment, we ensure a seamless and efficient development process, 
+            providing solutions that align with the ever-evolving demands of the digital landscape */}
             </ListItem>
             <ListItem title="E-commerce">
-            Transforming transactions into seamless experiences, our e-commerce expertise is dedicated to empowering businesses online. From intuitive user interfaces to secure payment gateways, we craft comprehensive e-commerce solutions that enhance customer satisfaction and drive success in the digital marketplace. Whether you're launching a new online store or optimizing an existing one, 
-            we provide tailored e-commerce development to meet your specific goals and elevate your online presence.
+            {/* Transforming transactions into seamless experiences, our e-commerce expertise is dedicated to empowering businesses online. From intuitive user interfaces to secure payment gateways, we craft comprehensive e-commerce solutions that enhance customer satisfaction and drive success in the digital marketplace. Whether you're launching a new online store or optimizing an existing one, 
+            we provide tailored e-commerce development to meet your specific goals and elevate your online presence. */}
             </ListItem>
             <ListItem title="Custom content management">
-            Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs.
+            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
             </ListItem>
           </List>
         </div>
