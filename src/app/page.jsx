@@ -12,7 +12,7 @@ export default function Home() {
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            UNDER CONSTRUCTION!! <br/>
+            UNDER WORKS!! <br/>
             <br/>
             Make your Software dreams a reality!
           </h1>
