@@ -12,7 +12,7 @@ const ContactDetails = () => {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? Here is a list of our addresses and contact details.
+        Prefer doing things in person? Here is our address and contact details.
       </p>
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
       <Border className="mt-16 pt-16">
@@ -22,7 +22,7 @@ const ContactDetails = () => {
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
             ["Careers", "divdynamics.com"],
-            ["Email", "chingolo265@gmail.com"],
+            ["Email", "divdynamics@gmail.com"],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>

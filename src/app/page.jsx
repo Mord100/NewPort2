@@ -17,8 +17,8 @@ export default function Home() {
             Make your Software dreams a reality!
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-          I'm a Software Developer/Engineer passionate about the intricate fusion of design and technology. In the dynamic landscape of my work, 
-          I navigate challenges with unwavering dedication, consistently pushing the boundaries of innovation.
+          We Software Developer/Engineer Digital Agency passionate about the intricate fusion of design and technology. In the dynamic landscape of our work, 
+          We navigate challenges with unwavering dedication, consistently pushing the boundaries of innovation.
           </p>
         </FadeIn>
       </Container>
