@@ -8,8 +8,8 @@ const WorkPage = () => {
     {
       title: "Zanyumba Real Estate Digital Product",
       imageSrc: "https://i.ibb.co/yszBC7G/zanyumba.jpg",
-      description: "A comprehensive digital platform for the real estate market, Zanyumba offers users seamless property search, detailed listings, virtual tours, and integrated communication tools to connect buyers, sellers, and agents.",
-      githubLink: "https://github.com/yourusername/project1",
+      description: "A comprehensive digital platform for the real estate market, Zanyumba offers users seamless property search, detailed listings, and integrated tools to connect buyers, sellers, and property seekers.",
+      githubLink: "https://github.com/Mord100",
       liveLink: "https://zanyumba.netlify.app/"
     }
     // Add more projects as needed
