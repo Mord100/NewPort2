@@ -1,11 +1,10 @@
 import React from "react";
 import Section from "./Section";
-import imageMeeting from "@/images/meeting.jpg";
 import List, { ListItem } from "./List";
 
 const Deliver = () => {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 1 }}>
+    <Section title="Deliver" image={{shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
         Placeholder
