@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata = {
   title: {
     template: "Portfolio",
-    default: "Mordecai.Dev",
+    default: "Div.Dynamics",
   },
 };
 
