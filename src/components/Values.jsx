@@ -13,33 +13,28 @@ const Values = () => {
         title="Balancing reliability and innovation"
       >
         <p>
-        Placeholder
+          At our core, we believe in balancing reliability with innovation. It’s about finding that sweet spot where we can deliver dependable solutions while also pushing the boundaries of what's possible.
         </p>
       </SectionIntro>
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-          Placeholder
+            We pay attention to every detail, ensuring that our work is of the highest quality and precision.
           </GridListItem>
           <GridListItem title="Efficient">
-          Placeholder
-
+            We strive to work smart and optimize our processes to deliver results quickly and effectively.
           </GridListItem>
           <GridListItem title="Adaptable">
-          Placeholder
-
+            Change is inevitable, and we embrace it by staying flexible and adapting to new challenges and opportunities.
           </GridListItem>
           <GridListItem title="Honest">
-          Placeholder
-
+            Honesty and integrity are the foundation of our relationships with clients and colleagues alike.
           </GridListItem>
           <GridListItem title="Loyal">
-          Placeholder
-
+            We're committed to our clients' success and build long-lasting partnerships based on trust and loyalty.
           </GridListItem>
           <GridListItem title="Innovative">
-            T Placeholder
-
+            We're not satisfied with the status quo. We continuously seek out new ideas and technologies to drive innovation and stay ahead of the curve.
           </GridListItem>
         </GridList>
       </Container>
