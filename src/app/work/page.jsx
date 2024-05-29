@@ -11,6 +11,13 @@ const WorkPage = () => {
       description: "A comprehensive digital platform for the real estate market, Zanyumba offers users seamless property search, detailed listings, and integrated tools to connect buyers, sellers, and property seekers.",
       githubLink: "https://github.com/Mord100",
       liveLink: "https://zanyumba.netlify.app/"
+    },
+    {
+      title: "Mental Health Matters Brand Website",
+      imageSrc: "https://i.ibb.co/RCjtmNQ/mhm-screenshot.png",
+      description: "A full responsive website for a Brand dedicated to bringing mental health awareness to the community",
+      githubLink: "https://github.com/Mord100",
+      liveLink: ""
     }
     // Add more projects as needed
   ];
