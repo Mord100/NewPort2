@@ -23,6 +23,7 @@ const ContactDetails = () => {
           {[
             ["Careers", "divdynamics.com"],
             ["Email", "divdynamics@gmail.com"],
+            ["Phone", "+265 995 26 46 49"],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>

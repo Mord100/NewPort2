@@ -8,6 +8,11 @@ import logoNorthAdventures from "../images/clients/north-adventures/logo-light1.
 import logoPhobiaLight from "../images/clients/phobia/logo-light1.png";
 import logoPhobiaLight2 from "../images/clients/phobia/logo-light2.png";
 import logoUnseal from "../images/clients/unseal/logo-light1.png";
+import iconFigma from "../images/icons/figma.png";
+import iconSpring from "../images/icons/spring.png";
+import iconSpringBoot from "../images/icons/spring-boot.png";
+import iconSequelize from "../images/icons/sequelize.png";
+import iconPostman from "../images/icons/postman.png";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
@@ -21,6 +26,11 @@ const clients = [
   ["Bright Path", logoBrightPath],
   ["North Adventures", logoNorthAdventures],
   ["Phobia", logoPhobiaLight2],
+  ["Figma", iconFigma],
+  ["Spring", iconSpring],
+  ["Spring Boot", iconSpringBoot],
+  ["Sequelize", iconSequelize],
+  ["Postman", iconPostman],
 ];
 
 const Clients = () => {
@@ -29,7 +39,7 @@ const Clients = () => {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-          Here are a few of the technologies that we use in our work.
+            Here are a few of the technologies that we use in our work.
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
