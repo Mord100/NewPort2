@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaSpinner } from 'react-icons/fa';
 import FadeIn from "./FadeIn";
 import TextInput from "./TextInput";
 import RadioInput from "./RadioInput";
@@ -19,6 +20,9 @@ const ContactForm = () => {
     budget: '',
   });
 
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -26,6 +30,8 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsButtonDisabled(true);
+    setIsLoading(true);
 
     emailjs.send(
       'service_ffg7jti', // replace with your EmailJS service ID
@@ -40,6 +46,12 @@ const ContactForm = () => {
     .catch((err) => {
       console.log('FAILED...', err);
       toast.error('Failed to send your message. Please try again.');
+    })
+    .finally(() => {
+      setTimeout(() => {
+        setIsButtonDisabled(false);
+        setIsLoading(false);
+      }, 2000);
     });
   };
 
@@ -86,15 +98,22 @@ const ContactForm = () => {
                 <legend className="text-base/6 text-neutral-500">Budget</legend>
               </fieldset>
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <RadioInput label="200K – 500K" name="budget" value="25" checked={formData.budget === "25"} onChange={handleChange} />
-                <RadioInput label="500K – 750K" name="budget" value="50" checked={formData.budget === "50"} onChange={handleChange} />
-                <RadioInput label="750K – 1M" name="budget" value="100" checked={formData.budget === "100"} onChange={handleChange} />
-                <RadioInput label="More than 1M" name="budget" value="150" checked={formData.budget === "150"} onChange={handleChange} />
+                <RadioInput label="200K – 500K" name="budget" value="250-500" checked={formData.budget === "250-500"} onChange={handleChange} />
+                <RadioInput label="500K – 750K" name="budget" value="500-750" checked={formData.budget === "500-750"} onChange={handleChange} />
+                <RadioInput label="750K – 1M" name="budget" value="750-1m" checked={formData.budget === "750-1m"} onChange={handleChange} />
+                <RadioInput label="More than 1M" name="budget" value="1m+" checked={formData.budget === "1m+"} onChange={handleChange} />
               </div>
             </div>
           </div>
-          <Button type="submit" className="mt-10">
-            Let’s work together
+          <Button type="submit" className="flex items-center justify-center  mt-10" disabled={isButtonDisabled}>
+            {isLoading ? (
+              <div className="flex gap-2">
+                <FaSpinner className="animate-spin" />
+                <span className="font-bold">Loading...</span>
+              </div>
+            ) : (
+              "Let’s work together"
+            )}
           </Button>
         </form>
       </FadeIn>
@@ -104,3 +123,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

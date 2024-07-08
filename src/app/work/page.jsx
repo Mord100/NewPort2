@@ -17,7 +17,7 @@ const WorkPage = () => {
       imageSrc: "https://i.ibb.co/RCjtmNQ/mhm-screenshot.png",
       description: "A full responsive website for a Brand dedicated to bringing mental health awareness to the community. Mental Health Matters: fashion meets mental health awareness, infusing hope and style with positivity in each garment.",
       githubLink: "https://github.com/Mord100",
-      liveLink: ""
+      liveLink: "https://mentalhealthmattersmw.netlify.app/"
     }
     // Add more projects as needed
   ];
