@@ -1,55 +1,66 @@
-import ContactSection from "@/components/ContactSection";
-import Container from "@/components/Container";
-import Cultures from "@/components/Cultures";
-import PageIntro from "@/components/PageIntro";
-import { StatList, StatListItem } from "@/components/StatList";
-import React from "react";
+import React from "react"
+import Link from "next/link"
+import ContactSection from "@/components/ContactSection"
+import Container from "@/components/Container"
+import Cultures from "@/components/Cultures"
+import PageIntro from "@/components/PageIntro"
+import { StatList, StatListItem } from "@/components/StatList"
+
+const TeamMember = ({ name, title, education, description }) => (
+  <div className="mb-12">
+    <h3 className="text-2xl font-bold mb-1 text-black">{name}</h3>
+    <p className="text-lg text-gray-700 mb-2">{title}</p>
+    {education && <p className="text-sm text-gray-600 mb-3">{education}</p>}
+    <p className="text-base leading-relaxed text-gray-800">{description}</p>
+  </div>
+)
 
 const AboutPage = () => {
   return (
     <>
-      <PageIntro eyebrow="About" title="">
-        <p>
-          Meet The Team
+      <PageIntro eyebrow="About" title="Meet The Team">
+        <p className="lead mb-8 text-gray-700">
+          Our team of dedicated professionals brings a wealth of experience and expertise to every project.
         </p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">     
-          <p className="font-bold">
-            Mordecai Chingolo - CEO and Lead Software Engineer
-          </p>  
-          <h2>BSc (Hons) Computing (Information Systems)</h2>
-          <p>
-            Special Focus: Computer Systems and Internet Technologies | Object Oriented Programming | Systems Development | Software Engineering | Application Development | Professional Project Management | User Interface Design | Agile Development with SCRUM | Data and Web Analytics | Web Programming Information Analysis and Visualisation | Database Management and Administration | Information and Content Management | Human Computer Interaction and Design
-          </p>
-        
-          <p className="font-bold">
-            Charles Nthani - CTO and Software Engineer
-          </p> 
-          <h2>BSc in Information Technology</h2>
-          <p>
-            Specialized in Information Technology, our team member Charles Nthani serves as the CTO and Software Engineer, bringing expertise in areas such as IT infrastructure, cybersecurity, and software development.
-          </p>
-      
-          <p className="font-bold">
-            Tiwonge Sikwese - CFO and Chief Operations Officer
-          </p>
-          <h2>BSc in Internal Auditing</h2>
-          <p>
-            With a background in Internal Auditing, Tiwonge Sikwese serves as the CFO and Chief Operations Officer, bringing valuable insights into risk management, compliance, and process optimization.
-          </p>
-   
-        </div>
+        <Link href="/registration-certificate" className="inline-block px-6 py-3 border-2 border-current text-clack font-semibold hover:bg-black hover:text-white transition-colors">
+          View Registration Certificate
+        </Link>
       </PageIntro>
-      <Container className="mt-16">
+
+      <Container className="mt-24">
+        <div className="space-y-16">
+          <TeamMember
+            name="Mordecai Chingolo"
+            title="CEO and Lead Software Engineer"
+            education="BSc (Hons) Computing (Information Systems)"
+            description="Special Focus: Computer Systems and Internet Technologies | Object Oriented Programming | Systems Development | Software Engineering | Application Development | Professional Project Management | User Interface Design | Agile Development with SCRUM | Data and Web Analytics | Web Programming Information Analysis and Visualisation | Database Management and Administration | Information and Content Management | Human Computer Interaction and Design"
+          />
+          <TeamMember
+            name="Charles Nthani"
+            title="CTO and Software Engineer"
+            education="BSc in Information Technology"
+            description="Specialized in Information Technology, Charles brings expertise in areas such as IT infrastructure, cybersecurity, and software development."
+          />
+          <TeamMember
+            name="Charlton Mopiha"
+            title="Sales and Marketing Manager"
+            description="Charlton spearheads our sales and marketing initiatives, utilizing his extensive knowledge in market analysis, brand development, and customer engagement to propel business growth. With a keen eye for market trends and a talent for crafting compelling brand narratives, Charlton has successfully cultivated and maintained strong relationships with clients, ensuring our company's continued expansion and success."
+          />
+        </div>
+      </Container>
+
+      <Container className="mt-24">
         <StatList>
-          <StatListItem value="3" label="Underpaid employees" />
-          <StatListItem value="1" label="Placated clients" />
-          <StatListItem value="MK" label="Invoices billed" />
+          <StatListItem value="3" label="Team members" />
+          <StatListItem value="10+" label="Years of combined experience" />
+          <StatListItem value="100%" label="Client satisfaction" />
         </StatList>
       </Container>
+
       <Cultures />
       <ContactSection />
     </>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage

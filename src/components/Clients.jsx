@@ -1,13 +1,12 @@
 import Image from "next/image";
-import logoBrightPath from "../images/clients/bright-path/logo-light1.png";
-import logoFamilyFund from "../images/clients/family-fund/logo-light1.png";
-import logoGreenLife from "../images/clients/green-life/logo-light1.png";
-import logoHomeWork from "../images/clients/home-work/logo-light1.png";
-import logoMailSmirk from "../images/clients/mail-smirk/logo-light1.png";
-import logoNorthAdventures from "../images/clients/north-adventures/logo-light1.png";
-import logoPhobiaLight from "../images/clients/phobia/logo-light1.png";
-import logoPhobiaLight2 from "../images/clients/phobia/logo-light2.png";
-import logoUnseal from "../images/clients/unseal/logo-light1.png";
+import iconHtml from "../images/icons/html.png"
+import iconNode from "../images/icons/node.png"
+import iconExpress from "../images/icons/express.png"
+import iconMongo from "../images/icons/mongo.png"
+import iconCss from "../images/icons/css.png"
+import iconJs from "../images/icons/javascript.png"
+import iconPhp from "../images/icons/php.png"
+import iconMySql from "../images/icons/mysql.png"
 import iconFigma from "../images/icons/figma.png";
 import iconSpring from "../images/icons/spring.png";
 import iconSpringBoot from "../images/icons/spring-boot.png";
@@ -17,15 +16,14 @@ import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
 const clients = [
-  ["Phobia", logoPhobiaLight],
-  ["Family Fund", logoFamilyFund],
-  ["Unseal", logoUnseal],
-  ["Mail Smirk", logoMailSmirk],
-  ["Home Work", logoHomeWork],
-  ["Green Life", logoGreenLife],
-  ["Bright Path", logoBrightPath],
-  ["North Adventures", logoNorthAdventures],
-  ["Phobia", logoPhobiaLight2],
+  ["html", iconHtml],
+  ["express", iconExpress],
+  ["node", iconNode],
+  ["Mongo", iconMongo],
+  ["Css", iconCss],
+["Javascript", iconJs],
+["mySql", iconMySql],
+["Php", iconPhp],
   ["Figma", iconFigma],
   ["Spring", iconSpring],
   ["Spring Boot", iconSpringBoot],

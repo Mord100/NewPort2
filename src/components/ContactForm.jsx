@@ -34,10 +34,10 @@ const ContactForm = () => {
     setIsLoading(true);
 
     emailjs.send(
-      'service_ffg7jti', // replace with your EmailJS service ID
-      'template_bf4p1eh', // replace with your EmailJS template ID
+      'service_ffg7jti', // EmailJS service ID
+      'template_bf4p1eh', //EmailJS template ID
       formData,
-      'zRi-RVhp9dKKyThly' // replace with your EmailJS user ID
+      'zRi-RVhp9dKKyThly' // EmailJS user ID
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);

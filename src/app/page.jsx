@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
+// import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
 import { LuConstruction } from "react-icons/lu";
 import { IoConstructSharp } from "react-icons/io5";
 
@@ -31,7 +31,7 @@ export default function Home() {
       <Clients />
       <Testimonials
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: "Phobia", logo: logoPhobiaDark }}
+        // client={{ name: "Phobia", logo: logoPhobiaDark }}
       >
         In the realm of software development, where code meets creativity, innovation is not just a choice;
         it's the keystroke that writes the future.
