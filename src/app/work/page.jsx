@@ -1,7 +1,6 @@
 import React from "react";
 import PageIntro from "@/components/PageIntro";
 import ProjectCard from "@/components/ProjectCard";
-import zanyumbaImage from "@/images/team/zanyumba.jpg"; // Import the image
 
 const WorkPage = () => {
   const projects = [
@@ -19,7 +18,6 @@ const WorkPage = () => {
       githubLink: "https://github.com/Mord100",
       liveLink: "https://mentalhealthmattersmw.netlify.app/"
     }
-    // Add more projects as needed
   ];
 
   return (
