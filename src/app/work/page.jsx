@@ -17,6 +17,13 @@ const WorkPage = () => {
       description: "A full responsive website for a Brand dedicated to bringing mental health awareness to the community. Mental Health Matters: fashion meets mental health awareness, infusing hope and style with positivity in each garment.",
       githubLink: "https://github.com/Mord100",
       liveLink: "https://mentalhealthmattersmw.netlify.app/"
+    },
+    {
+      title: "Rosalyn's Beach Hotel Website",
+      imageSrc: "https://i.ibb.co/3SkvtGF/rosalyns-Snip.jpg",
+      description: "A full responsive website for Rosalyn's Beach Hotel, offering a luxurious getaway experience with stunning lake views, modern amenities, and exceptional hospitality.",
+      githubLink: "https://github.com/Mord100",
+      liveLink: "https://rosalynsbeachhotel.com/"
     }
   ];
 
@@ -26,7 +33,7 @@ const WorkPage = () => {
         eyebrow="Work"
         title="Proven solutions for real-world problems."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-full gap-8 px-6 md:px-12 lg:px-60">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-3xl gap-12 px-8 md:px-16 lg:px-32">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

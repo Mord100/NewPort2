@@ -22,9 +22,9 @@ const AboutPage = () => {
         <p className="lead mb-8 text-gray-700">
           Our team of dedicated professionals brings a wealth of experience and expertise to every project.
         </p>
-        <Link href="/registration-certificate" className="inline-block px-6 py-3 border-2 border-current text-clack font-semibold hover:bg-black hover:text-white transition-colors">
+        <a href="/certificate.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 border-2 border-current text-black font-semibold hover:bg-black hover:text-white transition-colors">
           View Registration Certificate
-        </Link>
+        </a>
       </PageIntro>
 
       <Container className="mt-24">
