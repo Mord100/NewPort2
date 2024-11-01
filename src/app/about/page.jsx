@@ -18,17 +18,25 @@ const TeamMember = ({ name, title, education, description }) => (
 const AboutPage = () => {
   return (
     <>
-      <PageIntro eyebrow="About" title="Meet The Team">
+      <PageIntro eyebrow="About">
+        <p className="lead mb-8 text-gray-700">
+          We are a dynamic software development company specializing in creating innovative digital solutions for businesses and organizations. From web applications and mobile solutions to custom software development, we transform ideas into powerful, user-friendly digital experiences. Our expertise spans across modern technologies and frameworks, ensuring scalable, secure, and efficient solutions for our clients.
+        </p>
         <p className="lead mb-8 text-gray-700">
           Our team of dedicated professionals brings a wealth of experience and expertise to every project.
         </p>
         <a href="/certificate.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 border-2 border-current text-black font-semibold hover:bg-black hover:text-white transition-colors">
           View Registration Certificate
         </a>
+        
       </PageIntro>
+      
+      
 
       <Container className="mt-24">
+        <h1 className="text-black text-3xl font-bold pb-20">Meet The Team</h1>
         <div className="space-y-16">
+          
           <TeamMember
             name="Mordecai Chingolo"
             title="CEO and Lead Software Engineer"
@@ -44,6 +52,7 @@ const AboutPage = () => {
           <TeamMember
             name="Charlton Mopiha"
             title="Sales and Marketing Manager"
+            education="Diploma in Business Information Technology | Advanced Diploma in Computing(With Business Management)"
             description="Charlton spearheads our sales and marketing initiatives, utilizing his extensive knowledge in market analysis, brand development, and customer engagement to propel business growth. With a keen eye for market trends and a talent for crafting compelling brand narratives, Charlton has successfully cultivated and maintained strong relationships with clients, ensuring our company's continued expansion and success."
           />
         </div>
