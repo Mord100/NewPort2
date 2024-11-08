@@ -11,7 +11,7 @@ const TeamMember = ({ name, title, education, description }) => (
     <h3 className="text-2xl font-bold mb-1 text-black">{name}</h3>
     <p className="text-lg text-gray-700 mb-2">{title}</p>
     {education && <p className="text-sm text-gray-600 mb-3">{education}</p>}
-    <p className="text-base leading-relaxed text-gray-800">{description}</p>
+    <p className="text-[14px] leading-relaxed text-gray-800">{description}</p>
   </div>
 )
 
@@ -19,7 +19,7 @@ const AboutPage = () => {
   return (
     <>
       <PageIntro eyebrow="About">
-        <p className="lead mb-8 text-gray-700">
+        <p className="lead text-[16px] mb-8 text-gray-700">
           We are a dynamic software development company specializing in creating innovative digital solutions for businesses and organizations. From web applications and mobile solutions to custom software development, we transform ideas into powerful, user-friendly digital experiences. Our expertise spans across modern technologies and frameworks, ensuring scalable, secure, and efficient solutions for our clients.
         </p>
         <p className="lead mb-8 text-gray-700">

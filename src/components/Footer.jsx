@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
-          <Link href={"/"} aria-label="Home">
+          <Link href={"https://mordd.netlify.app/"} aria-label="Home">
             <Logo className="h-8" fillOnHover>
               MORD.DEV
             </Logo>
