@@ -7,6 +7,8 @@ import Testimonials from "@/components/Testimonials";
 // import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
 import { LuConstruction } from "react-icons/lu";
 import { IoConstructSharp } from "react-icons/io5";
+import { GoRocket } from "react-icons/go";
+
 
 
 export default function Home() {
@@ -14,10 +16,11 @@ export default function Home() {
     <main className="text-black">
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
+          <p className="text-[15px] flex gap-1 items-center font-medium tracking-tight text-neutral-950">
+            <GoRocket className="animate-bounce" /> New Gen Digital Innovations...
+          </p>
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            <LuConstruction /> 
-            UNDER WORKS!!
-            <IoConstructSharp />
+            
             <br />
             <br />
             Make your Software dreams a reality!
