@@ -29,7 +29,7 @@ const Header = ({
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
         <Logo invert={invert}>
-          <Image src={invert ? "/divwev-inverted.png" : "/divwev.png"} alt="DIV.DYNAMICS Logo" width={120} height={120} style={{ maxHeight: '120px', objectFit: 'contain', width: 'auto', height: 'auto' }} />
+          <Image src={invert ? "/divwev-inverted.png" : "/divwev.png"} alt="DIV.DYNAMICS Logo" layout="fixed" width={170} height={170} objectFit="contain" />
         </Logo>
         </Link>
         <div className="flex items-center gap-x-8">
