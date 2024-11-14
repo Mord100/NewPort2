@@ -29,7 +29,7 @@ const Header = ({
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
         <Logo invert={invert}>
-          <Image src={invert ? "/divwev-inverted.png" : "/divwev.png"} alt="DIV.DYNAMICS Logo" width={170} height={170} />
+          <Image src={invert ? "/divwev-inverted.png" : "/divwev.png"} alt="DIV.DYNAMICS Logo" width={170} height={170} style={{ maxHeight: '170px' }} />
         </Logo>
         </Link>
         <div className="flex items-center gap-x-8">
