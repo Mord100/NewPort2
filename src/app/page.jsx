@@ -23,7 +23,7 @@ export default function Home() {
             
             <br />
             <br />
-            Make your Software dreams a reality!
+            Make your <span className="text-blue-700">Software</span> dreams a reality!
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             We are a Software Dev/Engineering Digital Agency passionate about the intricate fusion of design and technology. In the dynamic landscape of our work,

@@ -48,6 +48,15 @@ const Services = () => {
             <ListItem title="Custom content management">
             {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
             </ListItem>
+            <ListItem title="Graphics design">
+            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+            </ListItem>
+            <ListItem title="Social media marketing">
+            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+            </ListItem>
+            <ListItem title="Branding">
+            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+            </ListItem>
           </List>
         </div>
       </Container>
