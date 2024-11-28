@@ -33,7 +33,7 @@ const WorkPage = () => {
         eyebrow="Work"
         title="Proven solutions for real-world problems."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-3xl gap-12 px-8 md:px-16 lg:px-32">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-3xl gap-12 px-8 md:px-16 lg:px-40">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
