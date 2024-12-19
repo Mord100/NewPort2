@@ -9,14 +9,14 @@ const WorkPage = () => {
       imageSrc: "https://i.ibb.co/yszBC7G/zanyumba.jpg",
       description: "A comprehensive digital platform for the real estate market, Zanyumba offers users seamless property search, detailed listings, and integrated tools to connect buyers, sellers, and property seekers.",
       githubLink: "https://github.com/Mord100",
-      liveLink: "https://zanyumba.netlify.app/"
+      liveLink: "https://zanyumba.onrender.com/"
     },
     {
       title: "Mental Health Matters Brand Website",
       imageSrc: "https://i.ibb.co/RCjtmNQ/mhm-screenshot.png",
       description: "A full responsive website for a Brand dedicated to bringing mental health awareness to the community. Mental Health Matters: fashion meets mental health awareness, infusing hope and style with positivity in each garment.",
       githubLink: "https://github.com/Mord100",
-      liveLink: "https://mentalhealthmattersmw.netlify.app/"
+      liveLink: "https://mentalhealthmw.org/"
     },
     {
       title: "Rosalyn's Beach Hotel Website",

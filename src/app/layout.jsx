@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata = {
   title: {
-    template: "Portfolio",
-    default: "Div.Dynamics",
+    template: "Software Engineering | Malawi | %s",
+    default: "Div Dynamics",
   },
 };
 
