@@ -44,7 +44,7 @@ const AboutPage = () => {
             description="Special Focus: Computer Systems and Internet Technologies | Object Oriented Programming | Systems Development | Software Engineering | Application Development | Professional Project Management | User Interface Design | Agile Development with SCRUM | Data and Web Analytics | Web Programming Information Analysis and Visualisation | Database Management and Administration | Information and Content Management | Human Computer Interaction and Design"
           />
           <TeamMember
-            name="Mphatso Chirwa"
+            name="Charles Nthani"
             title="CTO and Software Engineer"
             education="BSc in Information Technology"
             description="Specialized in Information Technology, Charles brings expertise in areas such as IT infrastructure, cybersecurity, and software development."
