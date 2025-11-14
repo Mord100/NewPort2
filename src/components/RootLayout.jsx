@@ -28,9 +28,16 @@ const Header = ({
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-        <Logo invert={invert}>
-          <Image src={invert ? "/divwev-inverted.png" : "/divwev.png"} alt="DIV.DYNAMICS Logo" layout="fixed" width={170} height={170} objectFit="contain" />
-        </Logo>
+          <Logo invert={invert}>
+            <Image 
+              src={invert ? "/divwev-inverted.png" : "/divwev.png"} 
+              alt="DIV.DYNAMICS Logo" 
+              width={170} 
+              height={170}
+              className="object-contain"
+              priority
+            />
+          </Logo>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>
