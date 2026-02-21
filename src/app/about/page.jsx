@@ -53,7 +53,7 @@ export default function AboutPage() {
             <div className="flex items-end justify-between mt-16 border-t border-neutral-800 pt-8 pb-16">
               <div className="max-w-lg">
                 <p className="text-neutral-400 text-base leading-relaxed">
-                  DiV Dynamics is a software engineering studio based in Malawi. We build web platforms, mobile applications, and digital systems for businesses that need precise, scalable, and well-considered software.
+                  Div Dynamics is a software engineering studio based in Malawi. We build web platforms, mobile applications, and digital systems for businesses that need precise, scalable, and well-considered software.
                 </p>
                 <a
                   href="/certificate.pdf"

@@ -104,7 +104,6 @@ const Navigation = () => {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/brand">Brand</NavigationItem>
-        <NavigationItem href="/brand/assets">Assets</NavigationItem>
       </NavigationRow>
     </nav>
   );

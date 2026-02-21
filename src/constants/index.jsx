@@ -25,7 +25,6 @@ export const navigation = [
       { title: "Blog", href: "/blog" },
       { title: "Contact us", href: "/contact" },
       { title: "Brand Guidelines", href: "/brand" },
-      { title: "Marketing Assets", href: "/brand/assets" },
     ],
   },
   {

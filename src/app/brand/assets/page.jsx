@@ -70,7 +70,7 @@ export default function MarketingAssetsPage() {
                   </p>
                   <div className="mt-8 flex items-center gap-3">
                     <div className="h-px flex-1 bg-neutral-800" />
-                    <p className="text-neutral-600 text-xs">divdynamics.com</p>
+                    <p className="text-neutral-600 text-xs">divdynamicsmw.com</p>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function MarketingAssetsPage() {
                   </p>
                   <div className="mt-8 flex items-center gap-3">
                     <div className="h-px flex-1 bg-neutral-100" />
-                    <p className="text-neutral-400 text-xs">divdynamics.com</p>
+                    <p className="text-neutral-400 text-xs">divdynamicsmw.com</p>
                   </div>
                 </div>
               </div>
@@ -282,7 +282,7 @@ export default function MarketingAssetsPage() {
                   <p className="text-neutral-400 text-xs leading-relaxed">
                     We measure our success by yours.
                   </p>
-                  <p className="text-neutral-600 text-xs mt-8">divdynamics.com</p>
+                  <p className="text-neutral-600 text-xs mt-8">divdynamicsmw.com</p>
                 </div>
               </div>
             </div>
@@ -319,7 +319,7 @@ export default function MarketingAssetsPage() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-neutral-300 text-xs mt-6">divdynamics.com</p>
+                  <p className="text-neutral-300 text-xs mt-6">divdynamicsmw.com</p>
                 </div>
               </div>
             </div>
@@ -335,11 +335,11 @@ export default function MarketingAssetsPage() {
                 className="w-full bg-blue-600 rounded-2xl overflow-hidden flex flex-col justify-between p-6"
                 style={{ aspectRatio: "9/16" }}
               >
-                <p className="text-[10px] tracking-widest uppercase text-white/50">DiV Dynamics</p>
+                <p className="text-[10px] tracking-widest uppercase text-white/50">Div Dynamics</p>
                 <div>
                   <p
                     className="font-medium text-white tracking-tight leading-none mb-6"
-                    style={{ fontSize: "clamp(36px, 6vw, 48px)" }}
+                    style={{ fontSize: "clamp(26px, 4vw, 38px)" }}
                   >
                     Software.<br />Reimagined.
                   </p>
@@ -387,7 +387,7 @@ export default function MarketingAssetsPage() {
                 </div>
                 <div className="text-right hidden lg:block">
                   <p className="text-neutral-600 text-xs">Malawi, Africa</p>
-                  <p className="text-blue-600 text-xs mt-1">divdynamics.com</p>
+                  <p className="text-blue-600 text-xs mt-1">divdynamicsmw.com</p>
                 </div>
               </div>
             </div>
@@ -472,7 +472,7 @@ export default function MarketingAssetsPage() {
                     className="font-medium text-white tracking-tight leading-none mb-3"
                     style={{ fontSize: "clamp(28px, 4vw, 44px)" }}
                   >
-                    DiV Dynamics
+                    Div Dynamics
                   </p>
                   <div className="w-8 h-px bg-blue-600 mb-3" />
                   <p className="text-neutral-500 text-sm">New Gen Digital Innovations · Malawi, Africa</p>
@@ -514,7 +514,7 @@ export default function MarketingAssetsPage() {
               >
                 <div className="flex items-center justify-between border-b border-neutral-800 pb-5">
                   <p className="text-[10px] tracking-widest uppercase text-blue-500">What We Do</p>
-                  <p className="text-[10px] text-neutral-700">divdynamics.com</p>
+                  <p className="text-[10px] text-neutral-700">divdynamicsmw.com</p>
                 </div>
                 <div className="grid grid-cols-3 gap-3 mt-4">
                   {["Web Dev", "App Dev", "Branding", "E-Commerce", "UI Design", "Marketing"].map((s) => (
@@ -540,7 +540,7 @@ export default function MarketingAssetsPage() {
               >
                 <div className="flex items-center justify-between border-b border-neutral-100 pb-5">
                   <Image src="/divwev.png" alt="DiV Dynamics" width={70} height={28} className="object-contain" />
-                  <p className="text-[10px] text-neutral-400">divdynamics.com</p>
+                  <p className="text-[10px] text-neutral-400">divdynamicsmw.com</p>
                 </div>
                 <div>
                   <p
@@ -552,7 +552,7 @@ export default function MarketingAssetsPage() {
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="bg-neutral-950 rounded-full px-5 py-2">
-                      <p className="text-white text-xs font-medium">hello@divdynamics.com</p>
+                      <p className="text-white text-xs font-medium">hello@divdynamicsmw.com</p>
                     </div>
                     <p className="text-neutral-400 text-xs">Malawi, Africa</p>
                   </div>
@@ -590,7 +590,7 @@ export default function MarketingAssetsPage() {
                 </div>
                 <div className="border-t border-neutral-800 pt-5">
                   <p className="text-white text-xl font-medium tracking-tight">New Gen Digital Innovations.</p>
-                  <p className="text-neutral-600 text-xs mt-1">divdynamics.com</p>
+                  <p className="text-neutral-600 text-xs mt-1">divdynamicsmw.com</p>
                 </div>
               </div>
             </div>
@@ -616,7 +616,7 @@ export default function MarketingAssetsPage() {
                 </div>
                 <div className="flex items-center justify-between border-t border-neutral-100 pt-5">
                   <p className="text-neutral-400 text-xs">We build it.</p>
-                  <p className="text-neutral-300 text-xs">divdynamics.com</p>
+                  <p className="text-neutral-300 text-xs">divdynamicsmw.com</p>
                 </div>
               </div>
             </div>
@@ -689,7 +689,7 @@ export default function MarketingAssetsPage() {
                     Every product we ship is a statement about what software can be when it's built with intention.
                   </p>
                 </div>
-                <p className="text-white/40 text-xs">divdynamics.com</p>
+                <p className="text-white/40 text-xs">divdynamicsmw.com</p>
               </div>
             </div>
 
@@ -749,7 +749,7 @@ export default function MarketingAssetsPage() {
                   <div className="flex items-center gap-3">
                     <Image src="/divwev-inverted.png" alt="DiV Dynamics" width={80} height={32} className="object-contain" />
                     <div className="w-px h-4 bg-neutral-800" />
-                    <p className="text-neutral-600 text-xs">divdynamics.com</p>
+                    <p className="text-neutral-600 text-xs">divdynamicsmw.com</p>
                   </div>
                 </div>
               </div>

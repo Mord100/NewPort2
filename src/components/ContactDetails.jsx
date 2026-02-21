@@ -21,7 +21,7 @@ const ContactDetails = () => {
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ["Careers", "divdynamics.com"],
+            ["Careers", "divdynamicsmw.com"],
             ["Email", "divdynamics@gmail.com"],
             ["Phone", "+265 995 26 46 49"],
           ].map(([label, email]) => (

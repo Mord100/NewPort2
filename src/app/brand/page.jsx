@@ -20,7 +20,7 @@ export default function BrandPage() {
               className="font-display font-medium text-white leading-none tracking-tight"
               style={{ fontSize: "clamp(72px, 12vw, 180px)" }}
             >
-              DiV
+              Div
             </h1>
             <h1
               className="font-display font-medium leading-none tracking-tight"
@@ -103,7 +103,7 @@ export default function BrandPage() {
                 <div className="bg-white border border-neutral-100 rounded-2xl flex items-center justify-center py-20 px-12">
                   <Image
                     src="/divwev.png"
-                    alt="DiV Dynamics — Primary"
+                    alt="Div Dynamics — Primary"
                     width={180}
                     height={72}
                     className="object-contain"
@@ -112,7 +112,7 @@ export default function BrandPage() {
                 <div className="bg-neutral-950 rounded-2xl flex items-center justify-center py-20 px-12">
                   <Image
                     src="/divwev-inverted.png"
-                    alt="DiV Dynamics — Reversed"
+                    alt="Div Dynamics — Reversed"
                     width={180}
                     height={72}
                     className="object-contain"
@@ -239,7 +239,7 @@ export default function BrandPage() {
                 <div>
                   <p className="text-2xl font-medium text-neutral-950 leading-snug tracking-tight mb-4">Mona Sans</p>
                   <p className="text-neutral-500 text-sm max-w-sm leading-relaxed">
-                    A variable typeface with a 700-unit weight axis and a 50-point width axis. Used exclusively across all DiV Dynamics touchpoints.
+                    A variable typeface with a 700-unit weight axis and a 50-point width axis. Used exclusively across all Div Dynamics touchpoints.
                   </p>
                 </div>
                 <div className="flex gap-2 flex-wrap">

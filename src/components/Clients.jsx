@@ -1,34 +1,57 @@
-import Image from "next/image";
-import iconHtml from "../images/icons/html.png";
-import iconNode from "../images/icons/node.png";
-import iconExpress from "../images/icons/express.png";
-import iconMongo from "../images/icons/mongo.png";
-import iconCss from "../images/icons/css.png";
-import iconJs from "../images/icons/javascript.png";
-import iconPhp from "../images/icons/php.png";
-import iconMySql from "../images/icons/mysql.png";
-import iconFigma from "../images/icons/figma.png";
-import iconSpring from "../images/icons/spring.png";
-import iconSpringBoot from "../images/icons/spring-boot.png";
-import iconSequelize from "../images/icons/sequelize.png";
-import iconPostman from "../images/icons/postman.png";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiExpress,
+  SiPython,
+  SiPhp,
+  SiSpring,
+  SiSpringboot,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiSequelize,
+  SiRedis,
+  SiDocker,
+  SiGit,
+  SiAmazonaws,
+  SiVercel,
+  SiHeroku,
+  SiSalesforce,
+  SiPostman,
+  SiFigma,
+  SiTailwindcss,
+} from "react-icons/si";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
 const stack = [
-  ["HTML", iconHtml],
-  ["Express", iconExpress],
-  ["Node.js", iconNode],
-  ["MongoDB", iconMongo],
-  ["CSS", iconCss],
-  ["JavaScript", iconJs],
-  ["MySQL", iconMySql],
-  ["PHP", iconPhp],
-  ["Figma", iconFigma],
-  ["Spring", iconSpring],
-  ["Spring Boot", iconSpringBoot],
-  ["Sequelize", iconSequelize],
-  ["Postman", iconPostman],
+  ["JavaScript", SiJavascript],
+  ["TypeScript", SiTypescript],
+  ["React", SiReact],
+  ["Next.js", SiNextdotjs],
+  ["Node.js", SiNodedotjs],
+  ["Express", SiExpress],
+  ["Python", SiPython],
+  ["PHP", SiPhp],
+  ["Spring", SiSpring],
+  ["Spring Boot", SiSpringboot],
+  ["MongoDB", SiMongodb],
+  ["MySQL", SiMysql],
+  ["PostgreSQL", SiPostgresql],
+  ["Sequelize", SiSequelize],
+  ["Redis", SiRedis],
+  ["Docker", SiDocker],
+  ["Git", SiGit],
+  ["AWS", SiAmazonaws],
+  ["Vercel", SiVercel],
+  ["Heroku", SiHeroku],
+  ["Salesforce", SiSalesforce],
+  ["Postman", SiPostman],
+  ["Figma", SiFigma],
+  ["Tailwind CSS", SiTailwindcss],
 ];
 
 const Clients = () => {
@@ -58,12 +81,18 @@ const Clients = () => {
             <div className="col-span-12 lg:col-span-3" />
             <ul
               role="list"
-              className="col-span-12 lg:col-span-9 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-10"
+              className="col-span-12 lg:col-span-9 grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 gap-x-6 gap-y-8"
             >
-              {stack.map(([name, logo]) => (
+              {stack.map(([name, Icon]) => (
                 <li key={name}>
                   <FadeIn>
-                    <Image src={logo} alt={name} unoptimized className="opacity-60 hover:opacity-100 transition-opacity" />
+                    <span className="inline-flex text-neutral-400 hover:text-neutral-200 transition-colors [&_svg]:shrink-0 [&_svg]:text-inherit">
+                      <Icon
+                        className="w-5 h-5 [&_*]:!fill-current [&_*]:stroke-current"
+                        title={name}
+                        aria-hidden
+                      />
+                    </span>
                   </FadeIn>
                 </li>
               ))}
