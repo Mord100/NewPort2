@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 
-const Logo = ({ invert, href, className, children, ...props }) => {
+const Logo = ({ invert, href, className, children, fillOnHover, ...props }) => {
   className = clsx(
     className,
     "black",

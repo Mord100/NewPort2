@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import PageIntro from "@/components/PageIntro";
 import Container from "@/components/Container";
+import FadeIn from "@/components/FadeIn";
 import { ProjectGrid, ProjectFilter } from "@/components/ProjectShowcase";
 
 const WorkPage = () => {
@@ -94,41 +94,72 @@ const WorkPage = () => {
 
   const categories = ["All", "Web Development", "Web3", "Fintech", "SaaS", "Creative", "Social Impact", "Real Estate", "Hospitality"];
 
-  const filteredProjects = activeCategory === "All" 
-    ? projects 
+  const filteredProjects = activeCategory === "All"
+    ? projects
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <>
-      <PageIntro
-        eyebrow="Our Work"
-        title="Proven solutions for real-world problems."
-      >
-        <p>
-          We believe in efficiency and maximizing our resources to provide the best value to our clients. 
-          The primary way we do that is by working with cutting-edge technologies and design patterns.
-        </p>
-      </PageIntro>
+    <main className="text-neutral-950 bg-white -mt-[92px]">
 
-      <Container className="mt-24 sm:mt-32 lg:mt-40">
-        <div className="flex items-center justify-between border-b border-neutral-200 pb-6">
-          <div className="flex-1 min-w-0">
-            <ProjectFilter 
-              categories={categories}
-              activeCategory={activeCategory}
-              onCategoryChange={setActiveCategory}
-            />
+      {/* ── HERO ── */}
+      <div className="bg-neutral-950 pt-48 pb-0 overflow-hidden">
+        <Container>
+          <FadeIn>
+            <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-500 mb-6">
+              01 — Our Work
+            </p>
+            <h1
+              className="font-display font-medium text-white leading-none tracking-tight"
+              style={{ fontSize: "clamp(64px, 10vw, 140px)" }}
+            >
+              Work that<br />
+              speaks.
+            </h1>
+            <div className="flex items-end justify-between mt-16 border-t border-neutral-800 pt-8 pb-16">
+              <p className="text-neutral-400 text-base max-w-lg leading-relaxed">
+                Every project is a precise response to a real business problem. We build, ship, and stand behind everything here.
+              </p>
+              <p className="text-neutral-600 text-sm tabular-nums hidden sm:block">{projects.length} projects</p>
+            </div>
+          </FadeIn>
+        </Container>
+      </div>
+
+      {/* ── PROJECTS ── */}
+      <section className="py-32">
+        <Container>
+          <div className="grid grid-cols-12 gap-6 mb-12">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-400 lg:sticky lg:top-24">
+                02 — Projects
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-9">
+              <div className="flex items-center justify-between border-b border-neutral-200 pb-6">
+                <div className="flex-1 min-w-0">
+                  <ProjectFilter
+                    categories={categories}
+                    activeCategory={activeCategory}
+                    onCategoryChange={setActiveCategory}
+                  />
+                </div>
+                <span className="text-sm text-neutral-400 ml-4 flex-shrink-0 tabular-nums">
+                  {filteredProjects.length}
+                </span>
+              </div>
+            </div>
           </div>
-          <span className="text-sm text-neutral-400 ml-4 flex-shrink-0">
-            {filteredProjects.length}
-          </span>
-        </div>
-      </Container>
 
-      <Container className="mt-16">
-        <ProjectGrid key={activeCategory} projects={filteredProjects} />
-      </Container>
-    </>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 lg:col-span-3" />
+            <div className="col-span-12 lg:col-span-9">
+              <ProjectGrid key={activeCategory} projects={filteredProjects} />
+            </div>
+          </div>
+        </Container>
+      </section>
+
+    </main>
   );
 };
 

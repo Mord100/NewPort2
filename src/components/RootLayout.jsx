@@ -102,11 +102,20 @@ const Navigation = () => {
         <NavigationItem href="/process">Process</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
       </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/brand">Brand</NavigationItem>
+        <NavigationItem href="/brand/assets">Assets</NavigationItem>
+      </NavigationRow>
     </nav>
   );
 };
 
+const darkHeroStartsWith = ["/brand", "/about", "/work", "/process", "/blog", "/contact"];
+
 const RootLayoutInner = ({ children }) => {
+  const pathName = usePathname();
+  const hasDarkHero =
+    pathName === "/" || darkHeroStartsWith.some((p) => pathName.startsWith(p));
   const panelId = useId();
   const [expanded, setExpanded] = useState(false);
   const openRef = useRef();
@@ -139,6 +148,7 @@ const RootLayoutInner = ({ children }) => {
             icon={HiMenuAlt4}
             toggleRef={openRef}
             expanded={expanded}
+            invert={hasDarkHero}
             onToggle={() => {
               setExpanded((expanded) => !expanded);
               window.setTimeout(() =>

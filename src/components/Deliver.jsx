@@ -1,36 +1,76 @@
 import React from "react";
-import Section from "./Section";
-import List, { ListItem } from "./List";
+import Container from "./Container";
+import FadeIn from "./FadeIn";
+
+const deliverables = [
+  {
+    title: "Testing",
+    description: "Full test coverage before anything ships. Quality and reliability are non-negotiable.",
+  },
+  {
+    title: "Infrastructure",
+    description: "Deployment on secure, scalable infrastructure — configured, documented, and handed over.",
+  },
+  {
+    title: "Support",
+    description: "Ongoing maintenance and direct access to the team that built it. The relationship doesn't end at go-live.",
+  },
+];
 
 const Deliver = () => {
   return (
-    <Section title="Deliver" image={{ shape: 1 }}>
-      <div className="space-y-6 text-base text-neutral-600">
-        <p>
-          We're thrilled to bring your vision to life and deliver the finished product to you. This is the culmination of our hard work and collaboration, and we're excited to see how it empowers your business.
-        </p>
-        <p>
-          As we hand over the product, we provide comprehensive training and documentation to ensure your team can hit the ground running. We're here to support you every step of the way as you integrate the new solution into your operations.
-        </p>
-        <p>
-          Additionally, we offer ongoing maintenance and support services to keep your product running smoothly. Our dedicated team is just a call or email away, ready to assist you with any questions or issues that may arise.
-        </p>
-      </div>
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        What's included in this phase
-      </h3>
-      <List>
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, ensuring quality and reliability from day one. We take pride in delivering a product that exceeds your expectations.
-        </ListItem>
-        <ListItem title="Infrastructure">
-          We handle all aspects of infrastructure setup and configuration, ensuring your product is deployed on a secure and scalable platform.
-        </ListItem>
-        <ListItem title="Support">
-          Our support doesn't end at delivery. We're committed to providing ongoing assistance and guidance to help you maximize the value of your investment.
-        </ListItem>
-      </List>
-    </Section>
+    <section className="py-32 border-b border-neutral-100">
+      <Container>
+        <FadeIn>
+          <div className="grid grid-cols-12 gap-6 mb-12">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-400 lg:sticky lg:top-24">
+                Phase / 03
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-9">
+              <h2 className="font-display text-3xl font-medium tracking-tight text-neutral-950 sm:text-4xl">
+                Deliver
+              </h2>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 lg:col-span-3" />
+            <div className="col-span-12 lg:col-span-9">
+              <div className="space-y-5 text-base text-neutral-600 max-w-2xl">
+                <p>
+                  Delivery is structured, not sudden. We hand over the product with
+                  comprehensive documentation and training so your team is ready
+                  from day one.
+                </p>
+                <p>
+                  Post-launch, we provide ongoing maintenance and support. We stay
+                  accountable to the work we shipped.
+                </p>
+              </div>
+
+              <div className="mt-12">
+                <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-400 mb-4">
+                  What's included
+                </p>
+                <div className="divide-y divide-neutral-100">
+                  {deliverables.map((item) => (
+                    <div key={item.title} className="py-6 grid grid-cols-1 lg:grid-cols-2 gap-3 items-start">
+                      <div className="flex items-center gap-4">
+                        <div className="w-1 h-1 rounded-full bg-blue-600 flex-shrink-0" />
+                        <p className="font-medium text-neutral-950">{item.title}</p>
+                      </div>
+                      <p className="text-sm text-neutral-500 leading-relaxed lg:pl-0 pl-5">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      </Container>
+    </section>
   );
 };
 

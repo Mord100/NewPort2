@@ -11,13 +11,11 @@ const Services = () => {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We excel in recognizing, investigating, and meeting your software requirements, offering customized solutions 
-        that perfectly match your distinct needs."
+        title="From concept to code — we handle the full stack."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-        We specialize in understanding and addressing your unique software needs, 
-        providing tailored solutions with precision.
+          We take on complex software challenges and deliver products that are precise, scalable, and built to last.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -34,28 +32,25 @@ const Services = () => {
           {/* List item */}
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Web development">
-            {/* Our specialty lies in the meticulous creation of stunning, high-quality marketing pages. With an unwavering focus on design excellence and user engagement, we ensure your online presence captivates and resonates with your audience. From sleek interfaces to compelling content, 
-            our web development expertise is dedicated to elevating your brand's digital experience. */}
+              End-to-end web platforms built with Next.js, React, and modern infrastructure. Fast, accessible, and engineered to scale.
             </ListItem>
             <ListItem title="Application development">
-            {/* We are at the forefront of innovative application development, leveraging cutting-edge technologies to bring your ideas to life. Our seasoned team of developers is committed to delivering robust and user-friendly applications tailored to meet your specific needs. From concept to deployment, we ensure a seamless and efficient development process, 
-            providing solutions that align with the ever-evolving demands of the digital landscape */}
+              Cross-platform mobile and desktop applications. Native performance where it matters, shared logic where it makes sense.
             </ListItem>
             <ListItem title="E-commerce">
-            {/* Transforming transactions into seamless experiences, our e-commerce expertise is dedicated to empowering businesses online. From intuitive user interfaces to secure payment gateways, we craft comprehensive e-commerce solutions that enhance customer satisfaction and drive success in the digital marketplace. Whether you're launching a new online store or optimizing an existing one, 
-            we provide tailored e-commerce development to meet your specific goals and elevate your online presence. */}
+              Custom storefronts and transaction systems built for conversion. Integrated payments, inventory, and fulfilment — without the overhead.
             </ListItem>
             <ListItem title="Custom content management">
-            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+              CMS architectures designed around how your team actually works. No bloated platforms — just the structure your content needs.
             </ListItem>
             <ListItem title="Graphics design">
-            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+              Visual systems grounded in brand strategy. Identity, print, and digital design that works across every surface.
             </ListItem>
             <ListItem title="Social media marketing">
-            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+              Campaigns built around the data. Strategy, creative, and execution — managed as one coherent system.
             </ListItem>
             <ListItem title="Branding">
-            {/* Enhance your online presence with our personalized content management solutions. We specialize in crafting bespoke systems that streamline the organization, updates, and optimization of your digital content. Our emphasis is on creating intuitive interfaces for effortless content management across websites, applications, and various digital platforms, tailored to meet your specific needs. */}
+              Brand identity from the ground up. Positioning, naming, visual language, and guidelines that hold under pressure.
             </ListItem>
           </List>
         </div>

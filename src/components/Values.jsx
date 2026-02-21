@@ -10,10 +10,10 @@ const Values = () => {
       </div>
       <SectionIntro
         eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        title="What we hold ourselves to."
       >
         <p>
-          At our core, we believe in balancing reliability with innovation. It’s about finding that sweet spot where we can deliver dependable solutions while also pushing the boundaries of what's possible.
+          Six principles that govern how we work, who we work with, and what we ship.
         </p>
       </SectionIntro>
       <Container className="mt-24">

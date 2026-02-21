@@ -1,12 +1,12 @@
 import Image from "next/image";
-import iconHtml from "../images/icons/html.png"
-import iconNode from "../images/icons/node.png"
-import iconExpress from "../images/icons/express.png"
-import iconMongo from "../images/icons/mongo.png"
-import iconCss from "../images/icons/css.png"
-import iconJs from "../images/icons/javascript.png"
-import iconPhp from "../images/icons/php.png"
-import iconMySql from "../images/icons/mysql.png"
+import iconHtml from "../images/icons/html.png";
+import iconNode from "../images/icons/node.png";
+import iconExpress from "../images/icons/express.png";
+import iconMongo from "../images/icons/mongo.png";
+import iconCss from "../images/icons/css.png";
+import iconJs from "../images/icons/javascript.png";
+import iconPhp from "../images/icons/php.png";
+import iconMySql from "../images/icons/mysql.png";
 import iconFigma from "../images/icons/figma.png";
 import iconSpring from "../images/icons/spring.png";
 import iconSpringBoot from "../images/icons/spring-boot.png";
@@ -15,15 +15,15 @@ import iconPostman from "../images/icons/postman.png";
 import Container from "./Container";
 import FadeIn, { FadeInStagger } from "./FadeIn";
 
-const clients = [
-  ["html", iconHtml],
-  ["express", iconExpress],
-  ["node", iconNode],
-  ["Mongo", iconMongo],
-  ["Css", iconCss],
-["Javascript", iconJs],
-["mySql", iconMySql],
-["Php", iconPhp],
+const stack = [
+  ["HTML", iconHtml],
+  ["Express", iconExpress],
+  ["Node.js", iconNode],
+  ["MongoDB", iconMongo],
+  ["CSS", iconCss],
+  ["JavaScript", iconJs],
+  ["MySQL", iconMySql],
+  ["PHP", iconPhp],
   ["Figma", iconFigma],
   ["Spring", iconSpring],
   ["Spring Boot", iconSpringBoot],
@@ -33,27 +33,42 @@ const clients = [
 
 const Clients = () => {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="bg-neutral-950 pb-24">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            Here are a few of the technologies that we use in our work.
-          </h2>
-          <div className="h-px flex-auto bg-neutral-800" />
+        <FadeIn>
+          <div className="grid grid-cols-12 gap-6 mb-12">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-500">
+                Stack
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-9">
+              <div className="flex items-center gap-x-6">
+                <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-neutral-500">
+                  Our technology stack.
+                </p>
+                <div className="h-px flex-auto bg-neutral-800" />
+              </div>
+            </div>
+          </div>
         </FadeIn>
+
         <FadeInStagger faster>
-          <ul
-            role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
-          >
-            {clients.map(([client, logo]) => (
-              <li key={client}>
-                <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
-                </FadeIn>
-              </li>
-            ))}
-          </ul>
+          <div className="grid grid-cols-12 gap-6">
+            <div className="col-span-12 lg:col-span-3" />
+            <ul
+              role="list"
+              className="col-span-12 lg:col-span-9 grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-10"
+            >
+              {stack.map(([name, logo]) => (
+                <li key={name}>
+                  <FadeIn>
+                    <Image src={logo} alt={name} unoptimized className="opacity-60 hover:opacity-100 transition-opacity" />
+                  </FadeIn>
+                </li>
+              ))}
+            </ul>
+          </div>
         </FadeInStagger>
       </Container>
     </div>
