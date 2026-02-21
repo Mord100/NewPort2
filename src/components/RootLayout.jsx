@@ -29,13 +29,13 @@ const Header = ({
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
           <Logo invert={invert}>
-            <Image 
-              src={invert ? "/divwev-inverted.png" : "/divwev.png"} 
-              alt="DIV.DYNAMICS Logo" 
-              width={170} 
+            <Image
+              src={invert ? "/divwev-inverted.png" : "/divwev.png"}
+              alt="DIV.DYNAMICS Logo"
+              width={170}
               height={170}
-              className="object-contain"
               priority
+              style={{ height: 56, width: "auto" }}
             />
           </Logo>
         </Link>
@@ -208,7 +208,7 @@ const RootLayoutInner = ({ children }) => {
       </header>
       <motion.div
         layout
-        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
+        style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
         className="relative flex flex-auto overflow-hidden bg-white pt-14"
       >
         <motion.div
