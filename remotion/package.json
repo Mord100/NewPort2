@@ -1,0 +1,16 @@
+{
+  "name": "div-dynamics-motion",
+  "version": "1.0.0",
+  "description": "DiV Dynamics — Motion Graphics",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render:logo": "remotion render src/index.jsx LogoReveal --output out/logo-reveal.mp4",
+    "render:social": "remotion render src/index.jsx SocialPost --output out/social-post.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4",
+    "remotion": "4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

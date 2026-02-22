@@ -5,7 +5,6 @@ import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "./Logo";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import Button from "./Button";
@@ -27,17 +26,15 @@ const Header = ({
     <Container>
       <div className="flex items-center justify-between">
         {/* Logo */}
-        <Link href={"/"} aria-label="Home">
-          <Logo invert={invert}>
-            <Image
-              src={invert ? "/divwev-inverted.png" : "/divwev.png"}
-              alt="DIV.DYNAMICS Logo"
-              width={170}
-              height={170}
-              priority
-              style={{ height: 56, width: "auto" }}
-            />
-          </Logo>
+        <Link href="/" aria-label="Home" className="shrink-0">
+          <Image
+            src={invert ? "/divwev-inverted.png" : "/divwev.png"}
+            alt="DIV.DYNAMICS Logo"
+            width={1600}
+            height={400}
+            priority
+            className="h-10 w-auto sm:h-12 lg:h-14 object-contain"
+          />
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>
