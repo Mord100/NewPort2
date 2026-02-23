@@ -5,7 +5,8 @@
   "scripts": {
     "studio": "remotion studio src/index.jsx",
     "render:logo": "remotion render src/index.jsx LogoReveal --output out/logo-reveal.mp4",
-    "render:social": "remotion render src/index.jsx SocialPost --output out/social-post.mp4"
+    "render:social": "remotion render src/index.jsx SocialPost --output out/social-post.mp4",
+    "render:reel": "remotion render src/index.jsx MarketingReel --output out/marketing-reel.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4",
